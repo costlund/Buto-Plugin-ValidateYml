@@ -1,0 +1,41 @@
+readme:
+  name: Buto-Plugin-ValidateYml
+  description: |
+    Validate yml with form/form_v1 validator or method is_yml.
+  item:
+    -
+      name: Settings
+    -
+      name: Usage
+    -
+      name: Pages
+      item: {  }
+    -
+      name: Widgets
+      item: {  }
+    -
+      name: Event
+      item: {  }
+    -
+      name: Construct
+    -
+      name: Methods
+      item:
+        -
+          name: validate_yml
+          description: |
+            Form validator.
+            ````
+            items:
+              content:
+                type: text
+                label: Content
+                validator:
+                  -
+                    plugin: validate/yml
+                    method: validate_yml
+            ````
+        -
+          name: is_yml
+          description: |
+            Public method.
